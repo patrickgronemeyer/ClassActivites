@@ -1,7 +1,7 @@
 // Correct these statements so they make sense
 // Sunday = 0, Monday = 1, ... Saturday = 6
 // re-assign day to any number from 0 - 7 to test the result
-let day = 1;
+let day = 6;
 let dayName = `Today`;
 
 // Complete this switch case statement to produce the correct results please.
@@ -33,7 +33,7 @@ switch (day) {
     break;
   // write a case here for the weekend (how many days in the weekend?)
   case (6, 0):
-    alert(`It's the Weekend !!`);
+    console.log(`It's the Weekend !!`);
 
 }
 if (dayName !== 'Today'){
