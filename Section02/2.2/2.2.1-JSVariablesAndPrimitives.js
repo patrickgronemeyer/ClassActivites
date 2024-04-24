@@ -28,4 +28,14 @@ let language = "sarcasism";
 let duration = 100;
 let mastery = true;
 
-console.log("Hello, my name is " + firstName + ", and I am learning " + language + ". I have been practicing for only " + duration  + " weeks, so my status as a master is: " + mastery + ".");
+console.log(
+  "Hello, my name is " +
+    firstName +
+    ", and I am learning " +
+    language +
+    ". I have been practicing for only " +
+    duration +
+    " weeks, so my status as a master is: " +
+    mastery +
+    "."
+);

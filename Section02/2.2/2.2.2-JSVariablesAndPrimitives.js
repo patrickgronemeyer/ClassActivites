@@ -39,4 +39,6 @@ wage = 44;
 satisfied = true;
 // use "console.log()" and "+" to print a sentence that includes two of the above variables
 
-console.log("Hello, my name is " + fname + ", and my favorite thing is " + favoriteThing);
+console.log(
+  "Hello, my name is " + fname + ", and my favorite thing is " + favoriteThing
+);
