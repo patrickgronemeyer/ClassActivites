@@ -1,0 +1,74 @@
+
+/*Class & ID Selectors, Targets specific elements using their class or ID attributes for custom styling. */
+/* Class selector for a general section */
+.section-header {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+/* ID selector for the main header */
+#main-header {
+    font-size: 32px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+/*Chaining Class Selector to an Element Selector, Targets specific elements using their class or ID attributes for custom styling. */
+/* Chain the class 'section-header' onto the <h2> element selector */
+h2.section-header {
+    border-bottom: 2px solid #888;
+    padding-bottom: 5px;
+}
+
+/* Grouping Selectors, Allows multiple selectors to share the same styles, reducing repetitive CSS rules. */
+/* Apply the same styles to multiple selectors at once */
+h1, p, a {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/*Selecting All Child List Items of a Specific List, Child List Items: Targets child <li> elements specifically within a certain <ul>. */
+/* Style all child <li> elements of the unordered list inside the 'Topics of Interest' section */
+section:nth-of-type(1) ul > li {
+    list-style: square;
+    color: #444;
+    margin-left: 20px;
+}
+
+/*Select Sibling Elements, Uses adjacent sibling combinator (+) to target an element following another. */
+/* Select any paragraph that is a sibling of an <h2> element */
+h2 + p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/*Box Model (Borders, Padding, and Margin), Adds borders, padding, and margins to elements, and adjusts spacing to explore how the box model works. */
+/* Universal selector to give all elements a border */
+* {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+/* Add padding and margin to some elements */
+header, footer {
+    padding: 15px;
+    margin: 10px 0;
+}
+/* Add padding and margin only on certain sides of an element */
+main {
+    padding: 20px 10px;
+    margin-left: 30px;
+}
+
+/*Pseudo-classes for Hover Effects, Adds hover effects to elements to provide a dynamic user experience. */
+/* Change link color on hover */
+a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+/* Change background color of a section on hover */
+section:hover {
+    background-color: #f0f8ff;
+}
+

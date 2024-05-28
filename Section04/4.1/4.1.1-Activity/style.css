@@ -1,0 +1,28 @@
+/* grouping */
+h1,
+h2 {
+  color: red;
+}
+
+/* descendant */
+ul li {
+  /* selects all li elements that are nested within the ul element */
+  border: 1px blue dashed;
+}
+
+/* child */
+#orderedList > li {
+  /* selects all list items that are direct descendants of the element with id "unorderedList" */
+  color: red;
+
+}
+
+/* general sibling */
+.gallery-title ~ img {
+  /* selects all sibling image tags that follow the element with class "gallery-title" */
+}
+
+/* direct sibling */
+footer + p {
+  /* selects the next paragraph element that is a sibling with the footer element */
+}
