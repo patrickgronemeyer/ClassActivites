@@ -1,6 +1,6 @@
- // https://jsonplaceholder.typicode.com/users
+// https://jsonplaceholder.typicode.com/users
 
- const data = [
+const data = [
   {
     id: 1,
     name: "Leanne Graham",
@@ -238,9 +238,27 @@ const cityList = data.map(user => user.address.city);
 console.log(cityList);
 
 // create an array of latitude and longitude coordinate pairs
-const coordinates = data.map(user => [user.address.geo.lat, user.address.geo.lng]);
+const coordinates = data.map(user => [
+  user.address.geo.lat,
+  user.address.geo.lng
+]);
 console.log(coordinates);
 
+// OR
+
+const pairs = data.map(user => [user.address.geo.lat, user.address.geo.lng]);
+
+const blockPairs = data.map(user => {
+  let lat = user.address.geo.lat;
+  let lng = user.address.geo.lng;
+
+  return [lat, lng];
+});
+
+console.log(pairs);
+
 // create an array of strings that combine the company's catchPhrase and bs
-const companyDescriptions = data.map(user => `${user.company.catchPhrase} - ${user.company.bs}`);
+const companyDescriptions = data.map(
+  user => `${user.company.catchPhrase} - ${user.company.bs}`
+);
 console.log(companyDescriptions);

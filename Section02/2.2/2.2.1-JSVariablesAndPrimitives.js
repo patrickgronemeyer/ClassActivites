@@ -12,7 +12,7 @@ const isDinkingAge = true;
 // print the types of two variables that reference two different data types (typeof)
 // TIP: console.log() prints a value in the console/terminal
 console.log(typeof phone);
-console.log(typeof isDinkingAge);
+console.log(typeof isDinkingAge); //IsDrinkingAge <- Nope!
 
 // change the value referenced by a variable (dynamic typing)
 console.log(typeof phone);

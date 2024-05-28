@@ -5,23 +5,23 @@
 header > h1 {
     color: darkblue;
   }
-  
+
   body > form {
       margin: 2em;
   }
-  
+
   /*  This styling sets up the flex container */
   .flex {
     display: flex;
     justify-content: space-between;
   }
-  
+
   /* this adds a border around the flex items */
   .flex > * {
     border: 1px solid;
   }
-  
-  
+
+
   /* Activity 5.2.1: Media queries
     -Add CSS that removes the border around the flex items */
     @media (max-width: 1200px) {
@@ -29,7 +29,7 @@ header > h1 {
           border: none;
         }
       }
-  
+
   /* Activity 5.2.2: Media queries
     -Add CSS for when screen size is less than 700px */
     @media (max-width: 700px) {
@@ -38,10 +38,10 @@ header > h1 {
         }
         /* to keep space between items  */
         .flex > * {
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
     }
     }
-  
+
   /* Activity 5.2.3: Media queries
     -Add CSS that checks for device hover capabilities */
     @media (hover:hover) {
@@ -49,7 +49,7 @@ header > h1 {
           color: red;
         }
       }
-  
+
   @media (min-width: 2000px) {
     * {
       color:orange;

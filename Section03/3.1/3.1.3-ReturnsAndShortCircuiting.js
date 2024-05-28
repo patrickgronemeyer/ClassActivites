@@ -1,13 +1,12 @@
-
 // what does the function below return?
 
-function myNumberFunction() {
-  let num = 2 ** 2;
-  num = num + 3;
-  num = num % 4;
-  num = num * 14;
-  console.log(num);
-}
+// function myNumberFunction() {
+//   let num = 2 ** 2;
+//   num = num + 3;
+//   num = num % 4;
+//   num = num * 14;
+//   console.log(num);
+// }
 // it returns undefined
 
 // change the function above to return a value
@@ -24,7 +23,7 @@ myNumberFunction();
 //or
 
 const result = myNumberFunction();
-console.log(result);  // This will print 42
+console.log(result); // This will print 42
 
 //This modification makes the function more versatile as it now returns its result, allowing the calling code to decide what to do with that value, such as storing, further processing, or printing it.
 
@@ -50,14 +49,9 @@ function checkCircusRides() {
   console.log("Enjoy the roller coaster!");
 }
 
+console.log(checkCircusRides());
 // change the function above to use short circuiting
-let height = 50;
-function checkCircusRides() {
-  if (height < 48) {
-    return"Take a ride on the carousel!";
-  }
-  if (height < 60) {
-    return"Try the bumper cars!";
-  }
-  return"Enjoy the roller coaster!";
-}
+
+let param4 = "a";
+
+param4 = 4;

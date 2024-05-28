@@ -29,3 +29,19 @@ while (arr.indexOf("a") !== arr.lastIndexOf("a")) {
 console.log(arr); // Outputs the modified array with only one 'a'
 
 // repeat until there is just one "a"
+function removeDuplicates(array, duplicatedValue) {
+  let firstIndex = array.indexOf(duplicatedValue);
+  let lastIndex = array.lastIndexOf(duplicatedValue);
+  while (firstIndex !== lastIndex) {
+    array.splice(lastIndex, 1);
+    lastIndex = array.lastIndexOf(duplicatedValue);
+  }
+  return array;
+}
+
+console.log(removeDuplicates(arr, "a"));
+
+for (lastA; firstA !== lastA; lastA = arr.lastIndexOf("a")) {
+  arr.splice(lastA, 1);
+  console.log(arr);
+}

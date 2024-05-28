@@ -8,9 +8,9 @@ const obj = {
 };
 
 // what will the following lines print?
-console.log(obj[key]);    //the key is 'key'
-console.log(obj.key);     //the key is 1
-console.log(obj["key"]);  //undefined
+console.log(obj[key]); //the key is 'key'
+console.log(obj.key); //the key is 1
+console.log(obj["key"]); //undefined
 
 // Create an object with at least four properties, each with a different data type.
 // Name one of the four properties "collection" and set its value to an Array or Object.
@@ -19,17 +19,15 @@ const car = {
   color: ["red", "black"],
   make: "GMC",
   yukon: true,
-  year: 2010,
-}
+  year: 2010
+};
 
 // Name one of the four properties "collection" and set its value to an Array or Object.
 
-car.collection = [1998, 2005, 2010, 2021]
+car.collection = [1998, 2005, 2010, 2021];
 
 // Access a value in the "collection" property
-console.log(car.collection[1]);  // Outputs: 2
-
-
+console.log(car.collection[1]); // Outputs: 2
 
 // Practice with nested Arrays and Objects
 const keys = ["key", "1", "method", "favorites", "list"];
@@ -58,7 +56,9 @@ for (let key in keys) {
 // This will print six lines (since arrays are 0-indexed, key will be the index, not the value of keys). Each line will likely show undefined since obj doesn't have properties matching the array index.
 
 // Use a template literal to print a sentence about your favorite things
-console.log(`My favorite movie is ${obj.favorites.movie}, number is ${obj.favorites.number}, and color is ${obj.favorites.color}.`);
+console.log(
+  `My favorite movie is ${obj.favorites.movie}, number is ${obj.favorites.number}, and color is ${obj.favorites.color}.`
+);
 
 // Access the values "b", 4, and 6 from obj.list
 

@@ -10,6 +10,6 @@ console.log(arr.length); // Outoputs: 4
 console.log(arr.length - 1); // Outoputs: 3
 // with for...of, loop over the Array, modify the value and add to a different Array
 
-for (let item of arr) {
-  console.log(item);
+for (let itemarr of arr) {
+  console.log(itemarr);
 } // Outoputs: one, two, three, four.

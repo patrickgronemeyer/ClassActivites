@@ -1213,13 +1213,21 @@ const data = [
 ];
 
 // filter the to-dos for incomplete tasks
-const incompleteTasks = data.filter(task => !task.completed);
+const incompleteTasks = data.filter(task => task.completed === false);
 console.log(incompleteTasks);
 
 // filter for user 6's tasks
 const userSixTasks = data.filter(task => task.userId === 6);
 console.log(userSixTasks);
 
+// filter for user 6's completed tasks
+const userSixCompletedTasks = data.filter(
+  task => task.userId === 6 && task.completed === true
+);
+
+const userSixCompletedTask = userSixTasks.filter(
+  task => task.completed === true
+);
 // filter for tasks with a title less than 24 characters long
-const shortTitleTasks = data.filter(task => task.title.length < 24);
-console.log(shortTitleTasks);
+const smallTitle = data.filter(task => task.title.length < 24);
+console.log(smallTitle);

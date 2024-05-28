@@ -2,7 +2,7 @@
 const fname = "Matt";
 
 // create a variable called "favoriteSong" that references a string
-let favoriteSong = "ooohahhhh";
+let favoriteSong = "Life be like Ooh Ahh ";
 
 // create a variable called "wage" that references a number
 let wage = 9999;

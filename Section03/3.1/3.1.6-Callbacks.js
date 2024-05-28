@@ -28,3 +28,10 @@ getNameAndShowMessage(welcome);
 
 // Using informAboutSale as the callback
 getNameAndShowMessage(informAboutSale);
+
+const obj = {
+  thing: "thing",
+  doSomething: function() {
+    console.log("something");
+  }
+};

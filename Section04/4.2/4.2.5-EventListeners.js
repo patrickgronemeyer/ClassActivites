@@ -16,6 +16,5 @@ document.querySelector("h3").addEventListener("mouseout", event => {
 document.querySelector('a[href="http://www.google.com"]'.addEventListener("click", event => {
   event.preventDefault();
 
-
   windows.location.href = "https://bing.com";
 })

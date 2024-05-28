@@ -240,23 +240,23 @@ console.log(cities);
 
 // create an array of latitude and longitude coordinate pairs
 const pairs = [];
-data.forEach((user) => {
+data.forEach(user => {
   let lat = user.address.geo.lat;
   let lng = user.address.geo.lng;
 
-  pairs.push([lat,lng]);
+  pairs.push([lat, lng]);
 });
 
 const coordinates = [];
 data.forEach(user => {
-    coordinates.push([user.address.geo.lat, user.address.geo.lng]);
+  coordinates.push([user.address.geo.lat, user.address.geo.lng]);
 });
 console.log(coordinates);
 
 // create an array of strings that combine the company's catchPhrase and bs
 const companyDescriptions = [];
 data.forEach(user => {
-    companyDescriptions.push(`${user.company.catchPhrase} ${user.company.bs}`);
+  companyDescriptions.push(`${user.company.catchPhrase} ${user.company.bs}`);
 });
 console.log(companyDescriptions);
 
@@ -264,9 +264,9 @@ console.log(companyDescriptions);
 const classes = document.querySelectorAll("class-week");
 
 classes.forEach((HTMLElement, i) => {
-  HTMLElement.textContent = 'text content is changed, class week ${i}' ; /// the ${i} is wrong color idk why?
+  HTMLElement.textContent = "text content is changed, class week ${i}"; /// the ${i} is wrong color idk why?
 });
 
-document.querySelectorAll('.class-week').forEach(HTMLElement => {
+document.querySelectorAll(".class-week").forEach(HTMLElement => {
   HTMLElement.textContent = "New Text Content"; // Replace "New Text Content" with the desired text
 });
